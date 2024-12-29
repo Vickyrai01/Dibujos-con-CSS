@@ -11,4 +11,5 @@ Cada carpeta en el repositorio contiene:
 
 ## Dibujos
 
-- [gatoGris](gatoGris/README.md)
+- [Gato gris](gatoGris/README.md)
+- [Piano](piano/README.md)
