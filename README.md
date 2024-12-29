@@ -12,4 +12,3 @@ Cada carpeta en el repositorio contiene:
 ## Dibujos
 
 - [gatoGris](gatoGris/README.md)
-- [Otro Dibujo](otra-carpeta/README.md)
