@@ -16,7 +16,7 @@ body {
     height: 500px;
     background: linear-gradient(#a569bd 75%, #7d3c98 100%);
     border-radius: 50% 50% 45% 45%;
-    border: 2px solid #000;
+    border: 2px solid #000; 
 }
 
 .oreja-izquierda, .oreja-derecha {
@@ -130,6 +130,7 @@ body {
 }
 .pupila-derecha{
     left: 298px;
+    top: 149px;
 }
 .sombra-pupila-izquierda, .sombra-pupila-derecha{
     position: absolute;
@@ -232,4 +233,172 @@ body {
     height: 92px;
     top: 100px;
     left: 250px;
+}
+.cabeza{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    left: 100px;
+    top: -45px;
+    display: flex;
+}
+.pelo{
+    width: 0;
+    height: 0;
+    border-left: 29px solid transparent; 
+    border-right: 29px solid transparent; 
+    border-bottom: 95px solid #a569bd;
+}
+.pelo1 {
+    top: 4px;
+    left: 8px;
+    transform: rotate(-10deg);
+    position: relative; 
+}
+
+.pelo2 {
+    transform: rotate(10deg);
+    top: -13px;
+    left: -5px;
+    position: relative; 
+}
+
+.pelo3 {
+    transform: rotate(15deg);
+    top: -30px;
+    left: -15px;
+    position: relative;
+}
+
+.pelo4 {
+    transform: rotate(25deg);
+    top: 10px;
+    position: relative;
+    left: -25px;
+    top: -15px;
+}
+
+.pelo5 {
+    transform: rotate(40deg);
+    top: 3px;
+    left: -42px;
+    position: relative; 
+}
+
+.pierna-izquierda,.pierna-derecha {
+    position: absolute;
+    width: 130px; /* Más anchas */
+    height: 120px; /* Más cortas */
+    background-color: #a569bd;
+    top: 410px; /* Ajuste la posición vertical si es necesario */
+    border-radius: 47%;
+}
+
+.pierna-izquierda {
+    left: 45px;
+}
+
+.pierna-derecha {
+    right: 45px;
+}
+
+.pie-izquierdo, .pie-derecho {
+    position: absolute;
+    width: 130px; /* Ajustar para que coincida con la pierna */
+    height: 70px; /* Ajuste de altura */
+    background-color: #a569bd;
+    top: 70px; /* Ajuste para que el pie esté más unido a la pierna */
+}
+
+.pie-izquierdo {
+    border-radius: 90px 0 30px 10px;
+    left: -10px; /* Ajuste para que el pie esté centrado con la pierna */
+}
+
+.pie-derecho {
+    border-radius:  0 90px 10px 30px;
+    left: 12px; /* Ajuste para que el pie esté centrado con la pierna */
+}
+
+.brazo-izquierdo, .brazo-derecho {
+    position: absolute;
+    width: 140px;
+    height: 260px;
+    background-color: #a569bd;
+    border-radius: 60%;
+    top: 170px;
+    border: 2px solid #000; 
+}
+
+.brazo-izquierdo {
+    left: -75px;
+    transform: rotate(10deg);
+}
+
+.brazo-derecho {
+    left: 375px;
+    transform: rotate(-10deg); 
+}
+
+.mano-izquierda, .mano-derecha {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 230px;
+    display: flex;
+}
+
+.mano-izquierda {
+    left: 18px;
+}
+
+.mano-derecha {
+    right: 18px;
+}
+
+.dedo {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid #a569bd;
+    transform: rotate(180deg);
+}
+
+.dedo1-izquierda {
+    position: relative;
+    transform: rotate(175deg);
+    top: -10px;
+    left: 6px;
+}
+.dedo2-izquierda {
+    position: relative;
+    transform: rotate(180deg);
+    top: 6px;
+    left: -6px;
+}
+.dedo3-izquierda {
+    position: relative;
+    transform: rotate(185deg);
+    top: -10px;
+    left: -22px;
+}
+
+.dedo1-derecha {
+    position: relative;
+    transform: rotate(175deg);
+    top: -3px;
+    left: 5px;
+}
+.dedo2-derecha {
+    position: relative;
+    transform: rotate(180deg);
+    top: 6px;
+    left: -9px;
+}
+.dedo3-derecha {
+    position: relative;
+    transform: rotate(185deg);
+    top: -10px;
+    left: -25px;
 }
