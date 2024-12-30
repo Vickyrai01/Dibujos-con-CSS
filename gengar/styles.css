@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d1f2eb;
+}
+.cuerpo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 450px;
+    height: 500px;
+    background: linear-gradient(#a569bd 75%, #7d3c98 100%);
+    border-radius: 50% 50% 45% 45%;
+    border: 2px solid #000;
+}
+
+.oreja-izquierda, .oreja-derecha {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent; 
+    border-right: 65px solid transparent; 
+    border-bottom: 170px solid #a569bd; 
+}
+
+.oreja-izquierda {
+    top: -70px;
+    left: -42px;
+    transform: rotate(-50deg);
+}
+
+.oreja-derecha {
+    top: -70px;
+    left: 360px;
+    transform: rotate(50deg);
+}
+
+.parte-de-adentro-oreja-izquierda, .parte-de-adentro-oreja-derecha {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.parte-de-adentro-oreja-izquierda {
+    border-left: 65px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 170px solid #7d3c98;
+    top: 0px;
+    left: -65px;
+    border-top-right-radius: 90%;
+}
+
+.parte-de-adentro-oreja-derecha {
+    border-left: 15px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 170px solid #7d3c98;
+    top: 0px;
+    left: -16px;
+    border-top-left-radius: 90%;
+    
+}
+.ojo {
+    position: absolute;
+    width: 120px;
+    height: 80px; 
+    border-radius: 80px 80px 10px 10px; 
+    border: 3px solid #000;
+    background-color: #ef5350;
+
+}
+.ojo-izquierdo {
+    top: 130px;
+    left: 60px;
+    transform: rotate(220deg); /* Inclina ligeramente el ojo izquierdo */
+}
+
+.ojo-derecho {
+    top: 130px;
+    right: 50px;
+    transform: rotate(-220deg); /* Inclina ligeramente el ojo derecho */
+}
+.sombra-ojo-izquierdo, .sombra-ojo-derecho{
+    position: absolute;
+    width: 95px;
+    height: 55px; 
+    background-color: #ec7063 ;
+    top: 5px;
+    
+}
+.sombra-ojo-izquierdo{
+    left: -2px;
+    transform: rotate(-7deg);
+    border-radius: 55px 55px 10px 0; 
+}
+.sombra-ojo-derecho{
+    left: 21px;
+    border-radius: 55px 55px 0 10px; 
+    transform: rotate(7deg);
+
+}
+.delineado-izquierdo, .delineado-derecho {
+    position: absolute;
+    width: 140px;
+    height: 80px; 
+    border-bottom: 4px solid #000;
+}
+.delineado-izquierdo{
+    top: -3px;
+    left: -10px;
+}
+.delineado-derecho{
+    top: -3px;
+    left: -15px;
+}
+.pupila-izquierda, .pupila-derecha{
+    position: absolute;
+    top: 145px;
+    width: 12px;
+    height: 35px;
+    background-color: #000;
+    border-radius: 60%;
+}
+.pupila-izquierda{
+    left: 145px;
+}
+.pupila-derecha{
+    left: 298px;
+}
+.sombra-pupila-izquierda, .sombra-pupila-derecha{
+    position: absolute;
+    width: 6px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 60%;
+    top: 4px;
+}
+.sombra-pupila-izquierda{
+    left: 3px;
+}
+.sombra-pupila-derecha{
+    left: 3px;
+}
+
+.reflejo-ojo-izquierdo, .reflejo-ojo-derecho{
+    position: absolute;
+    top: 140px;
+    width: 12px;
+    height: 22px;
+    background-color: #e6b0aa;
+    border-radius: 60%;
+
+}
+.reflejo-ojo-izquierdo{
+    left: 90px;
+    transform: rotate(-55deg);
+}
+.reflejo-ojo-derecho{
+    left: 355px;
+    transform: rotate(55deg);
+}
+.boca {
+    position: absolute;
+    width: 300px;
+    height: 230px;
+    top: 135px;
+    left: 70px;
+    background-color: #000;
+    border-radius: 100%; 
+    /*overflow: hidden;*/
+
+}
+.labio {
+    position: absolute;
+    width: 300px;
+    height: 100px; 
+    top: 170px;
+    left: 70px;
+    background-color: #a569bd;
+    border-radius: 100%; 
+    border-bottom: 5px solid #000;
+    /*overflow: hidden;*/
+}
+.ocultar{
+    position: absolute;
+    width: 300px;
+    height: 100px; 
+    top: 100px;
+    left: 70px;
+    background-color: #a569bd;
+}
+.dientes{
+    position: absolute;
+    width: 300px;
+    height: 230px;
+    top: 3px;
+    left: 0px;
+    background-color: #fff;
+    border-radius: 100%; 
+    border: 3px solid black;
+}
+.diente1, .diente2, .diente3, .diente4, .diente5{
+    position: absolute;
+    border-left: 4px solid #000;
+    width: 0;
+}
+.diente1{
+    height: 90px;
+    top: 100px;
+    left: 35px;
+}
+.diente2{
+    height: 118px;
+    top: 100px;
+    left: 89px;
+}
+.diente3{
+    height: 125px;
+    top: 100px;
+    left: 145px;
+}
+.diente4{
+    height: 118px;
+    top: 100px;
+    left: 198px;
+}
+.diente5{
+    height: 92px;
+    top: 100px;
+    left: 250px;
+}
